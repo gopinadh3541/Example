@@ -1,0 +1,49 @@
+GIT Commands
+-------------
+git init------ is the command to initialize the normal folder to git repository
+echo "Message"> Readme.txt---------- It will create the text file
+git add FileName---------- it will add the file into the repository
+git status----------- It will show the status of the repository (Like any files need to be added or nothing to add)
+git commit------ It will commit the latest changes to the local repository.
+or
+git commit -m "Here we can give the message itself"
+git commit -am "MESSAGE" --------- will do the two actions at a time. One is git add and git commit....
+git log-------  It will print all the commit history of the current branch.
+git diff commit_1 ... commit_2 ---------- it will print diff between the those two commits
+git diff HEAD~1 HEAD--------------- It will print above output only.
+touch filename--------- It indicates to adding new files in the repository
+git add -u------- It indicates to add the updated tracked files
+git add -A ------  It indicates to add the all the files either tracked ones or untracked ones.
+git checkout filename---- Is the command used to revert back or discard changes in the file.
+git reset --Hard--- It will reset back the all modifications to Head code.
+git reset --Soft ------- it will reset back
+git clean -n --- it will ask to remove untracked files in the repository
+git clean -f --- it will remove the untracked files in the repository
+.gitignore is the folder we can create to ignore some commits inside the git repository.
+git log --oneline ---------- It will give all commit messages
+git log --oneline | wc -l ---- It will give the count of commits
+git log --oneline --graph ------ it will gives you the graph of the current repository
+git shortlog ---- This command will print all the commits of individual users.
+https: port for git will give access for both read and write
+git:url.git will give the access to read only
+ssh - read write ssh keys
+file---- read-write for local only
+git branch --- it will display the current branch
+git branch -r --- it will all branches in the remote repository
+git remote add origin url---- it will create the repository in remote based on local repository
+git pull--- it is the command to get the new files from the remote repository to local repository
+git push --set-upstream origin master -- setting the current branch to the remote origin stage
+git push--- will push the files from local repository to remote repository
+git tag
+git branch -d branch name--- it will ask to delete the branch
+git branch -D branchname---  it will stash delete the branch
+git merge branch_dest_name ----- the files from branch_dest_name will merge to current branch
+
+Remote Repository:
+-------------------
+git clone URL ---- It will checkout the code from remote repository to local repository.
+
+Git Terminologies:
+-------------------
+HEAD--- The latest commit in the branch of that repository is known as the HEAD
+Tracked files----- The files which are known by the GIT.
